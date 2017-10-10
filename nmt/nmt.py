@@ -489,6 +489,7 @@ def main(unused_argv):
 
 
 if __name__ == "__main__":
+  os.environ["CUDA_VISIBLE_DEVICES"]="11, 12, 13, 14"
   nmt_parser = argparse.ArgumentParser()
   add_arguments(nmt_parser)
   FLAGS, unparsed = nmt_parser.parse_known_args()
